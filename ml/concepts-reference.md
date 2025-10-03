@@ -139,10 +139,89 @@ $$\text{tr}(A) = \sum_{i=1}^n A_{ii}$$
 **Properties**:
 - $\text{tr}(A + B) = \text{tr}(A) + \text{tr}(B)$
 - $\text{tr}(AB) = \text{tr}(BA)$
+- $\text{tr}(A) = \sum_i \lambda_i$ (sum of eigenvalues)
+
+### Determinant
+
+$$\det(AB) = \det(A)\det(B)$$
+
+**Properties**:
+- $\det(A^T) = \det(A)$
+- $\det(A) = \prod_i \lambda_i$ (product of eigenvalues)
+- $\det(A) = 0$ iff $A$ is singular (not invertible)
 
 ### Frobenius Norm
 
-$$\|A\|_F = \sqrt{\sum_{i,j} A_{ij}^2}$$
+$$\|A\|_F = \sqrt{\sum_{i,j} A_{ij}^2} = \sqrt{\text{tr}(A^T A)}$$
+
+### Eigenvalues & Eigenvectors
+
+$$A\mathbf{v} = \lambda\mathbf{v}$$
+
+**Characteristic equation**: $\det(A - \lambda I) = 0$
+
+**Properties**:
+- $\det(A) = \prod_i \lambda_i$
+- $\text{tr}(A) = \sum_i \lambda_i$
+- Symmetric matrix → real eigenvalues, orthogonal eigenvectors
+
+### Eigendecomposition
+
+$$A = V\Lambda V^{-1}$$
+
+- $V$: eigenvector matrix (columns are eigenvectors)
+- $\Lambda$: diagonal matrix of eigenvalues
+
+**For symmetric matrices**: $A = Q\Lambda Q^T$ where $Q$ is orthogonal
+
+### Singular Value Decomposition (SVD)
+
+$$A = U\Sigma V^T$$
+
+- $U \in \mathbb{R}^{m \times m}$: left singular vectors
+- $\Sigma \in \mathbb{R}^{m \times n}$: singular values (diagonal)
+- $V \in \mathbb{R}^{n \times n}$: right singular vectors
+
+**Relationship**:
+- Singular values = $\sqrt{\text{eigenvalues of } A^T A}$
+- $V$ = eigenvectors of $A^T A$
+- $U$ = eigenvectors of $AA^T$
+
+### Positive Definite Matrix
+
+**Definition**: $\mathbf{x}^T A \mathbf{x} > 0$ for all $\mathbf{x} \neq 0$
+
+**Equivalent conditions**:
+- All eigenvalues $> 0$
+- All leading principal minors $> 0$
+- Cholesky decomposition exists: $A = LL^T$
+
+### Condition Number
+
+$$\kappa(A) = \frac{\sigma_{max}}{\sigma_{min}} = \frac{|\lambda_{max}|}{|\lambda_{min}|}$$
+
+**Interpretation**:
+- $\kappa \approx 1$: Well-conditioned
+- $\kappa \gg 1$: Ill-conditioned (numerical instability, slow convergence)
+
+### Matrix Rank
+
+$$\text{rank}(A) = \text{number of linearly independent columns (or rows)}$$
+
+**Properties**:
+- $\text{rank}(A) \leq \min(m, n)$ for $m \times n$ matrix
+- $\text{rank}(A) = \text{rank}(A^T)$
+- $\text{rank}(AB) \leq \min(\text{rank}(A), \text{rank}(B))$
+
+### Orthogonal Matrix
+
+$$Q^T Q = QQ^T = I$$
+
+**Properties**:
+- Preserves lengths: $\|Q\mathbf{x}\| = \|\mathbf{x}\|$
+- Preserves angles
+- $\det(Q) = \pm 1$
+- Eigenvalues have magnitude 1
 
 ---
 

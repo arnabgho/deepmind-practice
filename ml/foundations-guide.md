@@ -294,12 +294,79 @@ For square matrix $A$:
 
 $$A\mathbf{v} = \lambda\mathbf{v}$$
 
-- $\mathbf{v}$: eigenvector
-- $\lambda$: eigenvalue
+- $\mathbf{v}$: eigenvector (direction preserved under transformation)
+- $\lambda$: eigenvalue (scaling factor)
 
-**Interpretation**: $A$ stretches $\mathbf{v}$ by factor $\lambda$ without changing direction
+**Geometric interpretation**: Eigenvectors point in special directions that only get scaled (not rotated) by the transformation
 
-**Use in ML**: Understanding covariance matrices, PCA
+**Finding eigenvalues**: Solve characteristic equation
+
+$$\det(A - \lambda I) = 0$$
+
+**Example**: $A = \begin{bmatrix} 4 & 1 \\ 2 & 3 \end{bmatrix}$
+
+Characteristic polynomial: $\lambda^2 - 7\lambda + 10 = 0$
+
+Eigenvalues: $\lambda_1 = 5, \lambda_2 = 2$
+
+**Properties**:
+- $n \times n$ matrix has $n$ eigenvalues (counting multiplicity)
+- $\det(A) = \prod_i \lambda_i$ (product of eigenvalues)
+- $\text{tr}(A) = \sum_i \lambda_i$ (sum of eigenvalues)
+
+### Eigendecomposition
+
+If $A$ has $n$ linearly independent eigenvectors:
+
+$$A = V\Lambda V^{-1}$$
+
+where $V$ = eigenvector matrix, $\Lambda$ = diagonal eigenvalue matrix
+
+**Use**: Computing matrix powers efficiently
+
+$$A^k = V\Lambda^k V^{-1}$$
+
+### Positive Definite Matrices
+
+**Definition**: Symmetric matrix where $\mathbf{x}^T A \mathbf{x} > 0$ for all $\mathbf{x} \neq 0$
+
+**Equivalent conditions**:
+- All eigenvalues $> 0$
+- All leading principal minors $> 0$
+- Cholesky decomposition exists: $A = LL^T$
+
+**In ML**:
+- Covariance matrices are positive semi-definite
+- Positive definite Hessian → local minimum
+
+### Principal Component Analysis (PCA)
+
+**Goal**: Find directions of maximum variance
+
+**Method**:
+1. Center data: $X \leftarrow X - \text{mean}(X)$
+2. Compute covariance: $C = \frac{1}{n-1}X^T X$
+3. Eigendecomposition: $C = V\Lambda V^T$
+4. Eigenvectors = principal components
+5. Eigenvalues = variance explained
+
+**Why it works**: Covariance matrix eigenvectors point toward maximum variance directions
+
+### Singular Value Decomposition (SVD)
+
+**Every** matrix $A$ (even non-square!) has SVD:
+
+$$A = U\Sigma V^T$$
+
+- $U$: left singular vectors (orthogonal)
+- $\Sigma$: singular values (diagonal, non-negative)
+- $V$: right singular vectors (orthogonal)
+
+**Relationship to eigendecomposition**:
+- Singular values of $A$ = $\sqrt{\text{eigenvalues of } A^T A}$
+- Right singular vectors = eigenvectors of $A^T A$
+
+**Use in ML**: Matrix factorization, compression, dimensionality reduction, PCA
 
 ---
 

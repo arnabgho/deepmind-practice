@@ -6,16 +6,16 @@ A comprehensive curriculum covering **calculus**, **statistics**, and **deep lea
 
 ## Progress Tracker
 
-**Total Progress: 0/20 topics completed**
+**Total Progress: 0/21 topics completed**
 
-- **Phase 1**: 0/5 completed
+- **Phase 1**: 0/6 completed
 - **Phase 2**: 0/7 completed
 - **Phase 3**: 0/5 completed
 - **Phase 4**: 0/3 completed
 
 ---
 
-## Phase 1: Mathematical Foundations (Topics 1-5)
+## Phase 1: Mathematical Foundations (Topics 1-6)
 
 ### 01. Derivatives & Gradients
 **Status**: ⬜ Not Started
@@ -23,25 +23,31 @@ A comprehensive curriculum covering **calculus**, **statistics**, and **deep lea
 **Why Important**: Foundation for understanding how neural networks learn
 **Key Skills**: Computing gradients, understanding gradient descent geometrically
 
-### 02. Chain Rule & Backpropagation Mathematics
+### 02. Linear Algebra & Eigendecomposition
+**Status**: ⬜ Not Started
+**Concepts**: Eigenvalues, eigenvectors, eigendecomposition, SVD, PCA, positive definite matrices
+**Why Important**: Core mathematical tool for ML, understanding transformations and data structure
+**Key Skills**: Computing eigenvalues/eigenvectors, PCA, analyzing matrix properties, condition numbers
+
+### 03. Chain Rule & Backpropagation Mathematics
 **Status**: ⬜ Not Started
 **Concepts**: Chain rule, computational graphs, gradient flow
 **Why Important**: Core mathematical principle behind backpropagation
 **Key Skills**: Manual backprop calculations, understanding gradient chains
 
-### 03. Partial Derivatives & Jacobians
+### 04. Partial Derivatives & Jacobians
 **Status**: ⬜ Not Started
 **Concepts**: Multivariable calculus, Jacobian matrices, Hessians
 **Why Important**: Understanding parameter spaces and second-order optimization
 **Key Skills**: Computing Jacobians, understanding curvature
 
-### 04. Probability & Statistics Fundamentals
+### 05. Probability & Statistics Fundamentals
 **Status**: ⬜ Not Started
 **Concepts**: Distributions, expectation, variance, covariance, Bayes' theorem
 **Why Important**: Foundation for understanding ML as statistical learning
 **Key Skills**: Working with distributions, computing expectations
 
-### 05. Maximum Likelihood Estimation
+### 06. Maximum Likelihood Estimation
 **Status**: ⬜ Not Started
 **Concepts**: MLE, log-likelihood, cross-entropy connection
 **Why Important**: Theoretical foundation for loss functions
@@ -49,45 +55,45 @@ A comprehensive curriculum covering **calculus**, **statistics**, and **deep lea
 
 ---
 
-## Phase 2: Deep Learning Fundamentals (Topics 6-12)
+## Phase 2: Deep Learning Fundamentals (Topics 7-13)
 
-### 06. Neural Network Forward Pass
+### 07. Neural Network Forward Pass
 **Status**: ⬜ Not Started
 **Concepts**: Linear transformations, affine layers, matrix operations
 **Why Important**: Understanding what happens during prediction
 **Key Skills**: Implementing forward pass from scratch, understanding dimensions
 
-### 07. Backpropagation Algorithm
+### 08. Backpropagation Algorithm
 **Status**: ⬜ Not Started
 **Concepts**: Gradient computation, backward pass, computational efficiency
 **Why Important**: How neural networks actually learn
 **Key Skills**: Implementing backprop from scratch, debugging gradient issues
 
-### 08. Activation Functions & Their Derivatives
+### 09. Activation Functions & Their Derivatives
 **Status**: ⬜ Not Started
 **Concepts**: ReLU, sigmoid, tanh, softmax; derivatives and properties
 **Why Important**: Non-linearity and gradient flow
 **Key Skills**: Choosing appropriate activations, understanding gradient vanishing/explosion
 
-### 09. Loss Functions
+### 10. Loss Functions
 **Status**: ⬜ Not Started
 **Concepts**: MSE, cross-entropy, their derivatives and use cases
 **Why Important**: Defining what "good" means for your model
 **Key Skills**: Implementing losses, understanding when to use which
 
-### 10. Optimization Algorithms
+### 11. Optimization Algorithms
 **Status**: ⬜ Not Started
 **Concepts**: SGD, momentum, RMSprop, Adam; learning rate schedules
 **Why Important**: How models converge during training
 **Key Skills**: Implementing optimizers, tuning learning rates
 
-### 11. Weight Initialization
+### 12. Weight Initialization
 **Status**: ⬜ Not Started
 **Concepts**: Xavier/Glorot, He initialization, impact on training
 **Why Important**: Preventing gradient vanishing/explosion from the start
 **Key Skills**: Understanding variance preservation, implementing initialization schemes
 
-### 12. Regularization Techniques
+### 13. Regularization Techniques
 **Status**: ⬜ Not Started
 **Concepts**: L1/L2 regularization, dropout, early stopping
 **Why Important**: Preventing overfitting
@@ -95,33 +101,33 @@ A comprehensive curriculum covering **calculus**, **statistics**, and **deep lea
 
 ---
 
-## Phase 3: Advanced Deep Learning Concepts (Topics 13-17)
+## Phase 3: Advanced Deep Learning Concepts (Topics 14-18)
 
-### 13. Batch Normalization & Layer Normalization
+### 14. Batch Normalization & Layer Normalization
 **Status**: ⬜ Not Started
 **Concepts**: Normalization layers, training vs inference mode, backprop through BN
 **Why Important**: Stable training and faster convergence
 **Key Skills**: Implementing normalization, understanding mode differences
 
-### 14. Convolutional Neural Networks - Mathematics
+### 15. Convolutional Neural Networks - Mathematics
 **Status**: ⬜ Not Started
 **Concepts**: Convolution operation, backprop through conv layers, parameter sharing
 **Why Important**: Understanding spatial hierarchies and parameter efficiency
 **Key Skills**: Computing conv output dimensions, implementing conv backprop
 
-### 15. Recurrent Neural Networks & Gradient Flow
+### 16. Recurrent Neural Networks & Gradient Flow
 **Status**: ⬜ Not Started
 **Concepts**: RNN equations, BPTT, vanishing/exploding gradients, LSTM/GRU
 **Why Important**: Understanding sequential data processing
 **Key Skills**: Implementing RNN forward/backward pass, understanding gradient flow over time
 
-### 16. Attention Mechanisms
+### 17. Attention Mechanisms
 **Status**: ⬜ Not Started
 **Concepts**: Attention scores, softmax attention, key-query-value paradigm
 **Why Important**: Foundation for modern architectures
 **Key Skills**: Implementing scaled dot-product attention, understanding attention weights
 
-### 17. Transformer Architecture
+### 18. Transformer Architecture
 **Status**: ⬜ Not Started
 **Concepts**: Self-attention, multi-head attention, positional encoding
 **Why Important**: State-of-the-art architecture for many tasks
@@ -129,21 +135,21 @@ A comprehensive curriculum covering **calculus**, **statistics**, and **deep lea
 
 ---
 
-## Phase 4: Practical Machine Learning (Topics 18-20)
+## Phase 4: Practical Machine Learning (Topics 19-21)
 
-### 18. Bias-Variance Tradeoff
+### 19. Bias-Variance Tradeoff
 **Status**: ⬜ Not Started
 **Concepts**: Underfitting, overfitting, model complexity
 **Why Important**: Diagnosing and fixing model performance issues
 **Key Skills**: Identifying bias vs variance problems, choosing appropriate solutions
 
-### 19. Evaluation Metrics & Cross-Validation
+### 20. Evaluation Metrics & Cross-Validation
 **Status**: ⬜ Not Started
 **Concepts**: Accuracy, precision, recall, F1, ROC-AUC; k-fold CV
 **Why Important**: Properly measuring model performance
 **Key Skills**: Choosing appropriate metrics, implementing CV
 
-### 20. Model Debugging & Hyperparameter Tuning
+### 21. Model Debugging & Hyperparameter Tuning
 **Status**: ⬜ Not Started
 **Concepts**: Learning curves, gradient checking, hyperparameter search strategies
 **Why Important**: Practical skills for getting models to work
@@ -154,39 +160,44 @@ A comprehensive curriculum covering **calculus**, **statistics**, and **deep lea
 ## Key Concepts Coverage Map
 
 ### Calculus
-- **Derivatives**: Topics 1, 2, 8, 9
-- **Chain Rule**: Topics 2, 7
-- **Partial Derivatives**: Topics 1, 3
-- **Gradients**: Topics 1, 2, 7
-- **Jacobians**: Topic 3
+- **Derivatives**: Topics 1, 3, 9, 10
+- **Chain Rule**: Topics 3, 8
+- **Partial Derivatives**: Topics 1, 4
+- **Gradients**: Topics 1, 3, 8
+- **Jacobians**: Topic 4
+
+### Linear Algebra
+- **Eigenvalues/Eigenvectors**: Topic 2
+- **Matrix Decomposition**: Topic 2
+- **PCA**: Topic 2
 
 ### Statistics & Probability
-- **Probability Distributions**: Topic 4
-- **Expectation & Variance**: Topics 4, 18
-- **Maximum Likelihood**: Topic 5
-- **Bayes' Theorem**: Topic 4
+- **Probability Distributions**: Topic 5
+- **Expectation & Variance**: Topics 5, 19
+- **Maximum Likelihood**: Topic 6
+- **Bayes' Theorem**: Topic 5
 
 ### Deep Learning Core
-- **Forward Pass**: Topic 6
-- **Backpropagation**: Topics 2, 7, 13, 14, 15
-- **Gradient Descent**: Topics 1, 10
-- **Activation Functions**: Topic 8
-- **Loss Functions**: Topics 5, 9
-- **Optimization**: Topic 10
+- **Forward Pass**: Topic 7
+- **Backpropagation**: Topics 3, 8, 14, 15, 16
+- **Gradient Descent**: Topics 1, 11
+- **Activation Functions**: Topic 9
+- **Loss Functions**: Topics 6, 10
+- **Optimization**: Topic 11
 
 ### Deep Learning Advanced
-- **Weight Initialization**: Topic 11
-- **Regularization**: Topic 12
-- **Normalization**: Topic 13
-- **CNNs**: Topic 14
-- **RNNs**: Topic 15
-- **Attention**: Topics 16, 17
-- **Transformers**: Topic 17
+- **Weight Initialization**: Topic 12
+- **Regularization**: Topic 13
+- **Normalization**: Topic 14
+- **CNNs**: Topic 15
+- **RNNs**: Topic 16
+- **Attention**: Topics 17, 18
+- **Transformers**: Topic 18
 
 ### Practical Skills
-- **Model Evaluation**: Topics 18, 19
-- **Debugging**: Topic 20
-- **Hyperparameter Tuning**: Topic 20
+- **Model Evaluation**: Topics 19, 20
+- **Debugging**: Topic 21
+- **Hyperparameter Tuning**: Topic 21
 
 ---
 
@@ -195,28 +206,28 @@ A comprehensive curriculum covering **calculus**, **statistics**, and **deep lea
 ### 4-Week Intensive Plan
 
 **Week 1: Mathematical Foundations**
-- Complete Topics 1-5
+- Complete Topics 1-6
 - Focus on understanding, not just memorization
 - Work through all derivations by hand
 
 **Week 2: Deep Learning Basics**
-- Complete Topics 6-12
+- Complete Topics 7-13
 - Implement everything from scratch in NumPy
 - Connect theory to code
 
 **Week 3: Advanced Concepts**
-- Complete Topics 13-17
+- Complete Topics 14-18
 - Focus on modern architectures
 - Understand attention mechanisms deeply
 
 **Week 4: Practical & Review**
-- Complete Topics 18-20
+- Complete Topics 19-21
 - Review all previous topics
 - Practice explaining concepts out loud
 
 ### 6-Week Comprehensive Plan
 
-**Weeks 1-2: Phase 1 (2-3 topics per week)**
+**Weeks 1-2: Phase 1 (3 topics per week)**
 **Weeks 3-4: Phase 2 (3-4 topics per week)**
 **Week 5: Phase 3 (5 topics)**
 **Week 6: Phase 4 + Review**
@@ -354,12 +365,12 @@ After completing this curriculum:
 ## Timeline Expectations
 
 - **Per Topic**: 3-4 hours (reading + exercises + implementation)
-- **Phase 1**: 15-20 hours (1-2 weeks)
+- **Phase 1**: 18-24 hours (1.5-2 weeks)
 - **Phase 2**: 21-28 hours (2-3 weeks)
 - **Phase 3**: 15-20 hours (1-2 weeks)
 - **Phase 4**: 9-12 hours (1 week)
 
-**Total**: 60-80 hours of focused study
+**Total**: 63-84 hours of focused study
 
 ---
 
